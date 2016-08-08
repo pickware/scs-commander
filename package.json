@@ -1,0 +1,32 @@
+{
+  "name": "scs-commander",
+  "version": "0.0.1",
+  "description": "A CLI tool for managing plugins in the Shopware Community Store.",
+  "license": "MIT",
+  "author": "Sven Muennich",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/VIISON/scs-commander.git"
+  },
+  "main": "index.js",
+  "bin": {
+    "scs-commander": "./index.js",
+    "scs-commander-description": "./lib/commands/description.js",
+    "scs-commander-list": "./lib/commands/list.js",
+    "scs-commander-upload": "./lib/commands/upload.js"
+  },
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "cli-table": "^0.3.1",
+    "co": "^4.6.0",
+    "co-prompt": "^1.0.0",
+    "commander": "^2.9.0",
+    "jszip": "^3.1.0",
+    "mz": "^2.4.0",
+    "semver": "^5.3.0",
+    "superagent": "^2.1.0"
+  },
+  "engines": {
+    "node": ">=v5.4.1"
+  }
+}
