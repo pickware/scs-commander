@@ -24,7 +24,7 @@ You can sort the results by passing option `-s <sort_field>`. The available sort
 
 **Remark:** You can only upload plugin `.zip` files, which contain a valid `plugin.json` file next to the plugin `Bootstrap.php` (see [shopwareLabs/plugin-info](https://github.com/shopwareLabs/plugin-info) for more info).
 
-`scs-commander upload -u <your_username> -p <technical_plugin_name> <path_to_plugin_zip_file>`
+`scs-commander upload -u <your_username> <path_to_plugin_zip_file>`
 
 To release an uploaded plugin version by requesting a review, pass the `--release` option.
 
