@@ -5,8 +5,8 @@
   "license": "MIT",
   "author": "Sven Muennich",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/VIISON/scs-commander.git"
+    "type": "git",
+    "url": "https://github.com/VIISON/scs-commander.git"
   },
   "main": "index.js",
   "bin": {
