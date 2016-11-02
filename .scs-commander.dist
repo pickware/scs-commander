@@ -1,0 +1,11 @@
+# .scs-commander env file template
+#
+# Set some or all of the following environment variables and save the file
+# as .scs-commander in your user's home directory.
+#
+
+# Your Shopware community store username (can be overwritten by passing -u|--username to any command)
+# SCS_USERNAME=
+
+# Your Shopware community store password
+# SCS_PASSWORD=
