@@ -34,6 +34,30 @@ You can sort the results by passing option `-s <sort_field>`. The available sort
 
 To release an uploaded plugin version by requesting a review, pass the `--release` option.
 
+**Hint:** Releasing the plugin right away makes usually only sense when providing a changelog for all available languages. The changelog is parsed either directly from `plugin.json` or, if available in the provided `.zip` file, from `CHANGELOG.md`. The benefit of using a separate `CHANGELOG.md` file is the readability. Currently the [changelog parser](https://github.com/VIISON/scs-commander/blob/master/lib/plugin_changelog_parser.js) supports only a simple structure:
+
+```
+## <version_0>
+
+### <language_A, e.g. 'de'>
+
+The changelog content of 'version_0' in 'language_A'. Can contain any markdown except for '##' and '###' headlines.
+
+### <language_B, e.g. 'en'>
+
+The changelog content of 'version_0' in 'language_B'.
+
+## <version_1>
+
+### <language_A, e.g. 'de'>
+
+The changelog content of 'version_1' in 'language_A'.
+
+[...]
+```
+
+Any whitespace/newlines leading or trailing a changelog for a version/language is trimmed and the remaining content is compiled to HTML, which is used as the changelog in the store. This makes it easy to add lists, links and simple formatting (bold, italic etc.) to your plugin changelogs in the community store (and it looks nice in your GitHub repositories too). The order of versions or languages within a version is arbitrary.
+
 ## License
 
 MIT
