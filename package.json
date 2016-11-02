@@ -1,6 +1,6 @@
 {
   "name": "scs-commander",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A CLI tool for managing plugins in the Shopware Community Store.",
   "license": "MIT",
   "author": "Sven Muennich",
