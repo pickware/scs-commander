@@ -10,9 +10,9 @@ For now you have to pull this repository or download the source and install it u
 
 ## Configuration
 
-You can set your Shopware Community Store username and password in an environment configuration in your user's home directory (`~/.scs-commaner`). This file is optional, so you can still pass the username via `-u` to each command and enter your password when asked. Also, even if `~/.scs-commaner` exists and contains a username, you can overwrite it by passing the '-u' argument to the command.
+You can set your Shopware Community Store username and password in an environment configuration in your user's home directory (`~/.scs-commander`). This file is optional, so you can still pass the username via `-u` to each command and enter your password when asked. Also, even if `~/.scs-commander` exists and contains a username, you can overwrite it by passing the '-u' argument to the command.
 
-See [`.scs-commaner.dist`](https://github.com/VIISON/scs-commander/blob/master/.scs-commaner.dist) for further info.
+See [`.scs-commander.dist`](https://github.com/VIISON/scs-commander/blob/master/.scs-commander.dist) for further info.
 
 ## Usage
 
