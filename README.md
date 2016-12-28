@@ -32,7 +32,7 @@ You can sort the results by passing option `-s <sort_field>`. The available sort
 
 `scs-commander upload -u <your_username> <path_to_plugin_zip_file>`
 
-To release an uploaded plugin version by requesting a review, pass the `--release` option.
+By default, this command automatically requests a review of the uploaded plugin version, which causes the binary to be released automatically. If you only want to upload the binary, pass the `--no_release` or `-R` option.
 
 **Hint:** Releasing the plugin right away makes usually only sense when providing a changelog for all available languages. The changelog is parsed either directly from `plugin.json` or, if available in the provided `.zip` file, from `CHANGELOG.md`. The benefit of using a separate `CHANGELOG.md` file is the readability. Currently the [changelog parser](https://github.com/VIISON/scs-commander/blob/master/lib/plugin_changelog_parser.js) supports only a simple structure:
 
