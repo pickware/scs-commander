@@ -17,7 +17,8 @@
   },
   "scripts": {
     "eslint": "eslint .",
-    "eslint:fix": "eslint --fix ."
+    "eslint:fix": "eslint --fix .",
+    "start": "node ."
   },
   "dependencies": {
     "chalk": "^1.1.3",
