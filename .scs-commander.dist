@@ -15,6 +15,3 @@
 
 # The release event endpoint URL to call for slack notifications
 # SCS_RELEASE_EVENT_ENDPOINT=
-
-# The release event token
-# SCS_RELEASE_EVENT_TOKEN=
