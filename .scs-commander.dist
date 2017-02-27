@@ -13,5 +13,6 @@
 # Set this option to 1 to disable any 'growl' notifications
 # SCS_DISABLE_GROWL=0
 
-# The release event endpoint URL to call for slack notifications
+# An optional HTTP webhook endpoint to call after a release
+# It supports basic auth and might look like this: https://USERNAME:PASSWORD@domain.tld/endpoint
 # SCS_RELEASE_EVENT_ENDPOINT=
