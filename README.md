@@ -11,6 +11,7 @@ For now you have to pull this repository or download the source and install it u
 ## Configuration
 
 You can set your Shopware Community Store username and password in an environment configuration in your user's home directory (`~/.scs-commander`). This file is optional, so you can still pass the username via `-u` to each command and enter your password when asked. Also, even if `~/.scs-commander` exists and contains a username, you can overwrite it by passing the '-u' argument to the command.
+Additionally you can set an optional HTTP webhook endpoint in the configuration file as well. This will call the endpoint upon a successful release. The URL supports basic auth and might look like this: `https://USERNAME:PASSWORD@domain.tld/endpoint`
 
 See [`.scs-commander.dist`](https://github.com/VIISON/scs-commander/blob/master/.scs-commander.dist) for further info.
 
@@ -33,6 +34,7 @@ You can sort the results by passing option `-s <sort_field>`. The available sort
 `scs-commander upload -u <your_username> <path_to_plugin_zip_file>`
 
 By default, this command automatically requests a review of the uploaded plugin version, which causes the binary to be released automatically. If you only want to upload the binary, pass the `--no_release` or `-R` option.
+If set, the HTTP endpoint will get called after a successful release.
 
 **Hint:** Releasing the plugin right away makes usually only sense when providing a changelog for all available languages. The changelog is parsed either directly from `plugin.json` or, if available in the provided `.zip` file, from `CHANGELOG.md`. The benefit of using a separate `CHANGELOG.md` file is the readability. Currently the [changelog parser](https://github.com/VIISON/scs-commander/blob/master/lib/plugin_changelog_parser.js) supports only a simple structure:
 
