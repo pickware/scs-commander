@@ -60,6 +60,12 @@ The changelog content of 'version_1' in 'language_A'.
 
 Any whitespace/newlines leading or trailing a changelog for a version/language is trimmed and the remaining content is compiled to HTML, which is used as the changelog in the store. This makes it easy to add lists, links and simple formatting (bold, italic etc.) to your plugin changelogs in the community store (and it looks nice in your GitHub repositories too). The order of versions or languages within a version is arbitrary.
 
+### Print the changelog of a plugin
+
+`scs-commander changelog -l <language, e.g. "en"> <path_to_plugin_zip_file>`
+
+You can also get complied HTML (which is the same as used by the `upload` command) by setting `--html`.
+
 ## License
 
 MIT
