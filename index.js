@@ -8,6 +8,7 @@ const version = require('./lib/version');
 // Define CLI
 Program
     .version(version)
+    .command('changelog', 'Echos a plugin zip file\'s changelog.')
     .command('description', 'Updates the plugin description of a supported locale.')
     .command('upload', 'Uploads a plugin zip file and makes it available for download.')
     .command('list', 'Lists all available plugins.', { isDefault: true })
