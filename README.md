@@ -21,7 +21,7 @@ See [`.scs-commander.dist`](https://github.com/VIISON/scs-commander/blob/master/
 
 `scs-commander list -u <your_username>`
 
-You can sort the results by passing option `-s <sort_field>`. The available sort fields are `name`, `version`, `active` and `reviewStatus`.
+You can sort the results by passing option `-s <sort_field>`. The available sort fields are `name`, `version`, `active`, `reviewStatus` and `shopwareCompatibility`.
 
 ### Update the description of a plugin
 
@@ -64,7 +64,7 @@ Any whitespace/newlines leading or trailing a changelog for a version/language i
 
 `scs-commander changelog -l <language, e.g. "en"> <path_to_plugin_zip_file>`
 
-You can also get complied HTML (which is the same as used by the `upload` command) by setting `--html`.
+You can also get complied HTML (which is the same as used by the `upload` command) by setting `--html`. If no `language` is provided, the english changelog is returned.
 
 ## License
 
