@@ -25,7 +25,7 @@ You can sort the results by passing option `-s <sort_field>`. The available sort
 
 ### Update the description of a plugin
 
-`scs-commander description -u <your_username> -p <technical_plugin_name> <path_to_description_file>`
+`scs-commander description -u <your_username> -p <technical_plugin_name> -l <locale> <path_to_description_file>`
 
 ### Upload a new version of a plugin
 
