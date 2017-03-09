@@ -21,7 +21,7 @@ See [`.scs-commander.dist`](https://github.com/VIISON/scs-commander/blob/master/
 
 `scs-commander list -u <your_username>`
 
-You can sort the results by passing option `-s <sort_field>`. The available sort fields are `name`, `version`, `active`, `reviewStatus` and `shopwareCompatibility`.
+You can sort the results by passing option `-s <sort_field>`. The available sort fields are `name`, `version`, `active`, `reviewStatus` and `shopwareCompatibility`. By default only active plugins are listed. If you wish to list all plugins of the account pass `--show-all`.
 
 ### Update the description of a plugin
 
