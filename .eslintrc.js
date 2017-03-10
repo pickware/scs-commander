@@ -16,6 +16,7 @@ module.exports = {
         }],
         'class-methods-use-this': 0,
         'func-names': 0,
+        'newline-before-return': ['error'],
         'indent': ['error', 4],
     }
 };
