@@ -1,8 +1,5 @@
-FROM node:latest
+FROM node:onbuild
 
-COPY . /app/
-WORKDIR /app/
-
-RUN npm install && npm link
+RUN npm link
 
 ENTRYPOINT ["scs-commander"]
