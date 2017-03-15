@@ -13,8 +13,6 @@ node {
 	}
 
 	stage('ESLint') {
-		scsCommander.inside() {
-			sh 'npm run eslint'
-		}
-	}
+		sh "docker run -i --rm -u \$(id -u):\$(id -g) --entrypoint npm ${scsCommander.imageName()} run eslint"
+	}	
 }
