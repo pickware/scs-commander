@@ -34,7 +34,8 @@
         "mz": "^2.4.0",
         "node-notifier": "^4.6.1",
         "semver": "^5.3.0",
-        "superagent": "^2.1.0"
+        "superagent": "^2.1.0",
+        "axios": "^0.15.3"
     },
     "engines": {
         "node": ">=v7.0.0"
