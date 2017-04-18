@@ -21,6 +21,5 @@ module.exports = {
         'indent': ['error', 4, { 'SwitchCase': 1 }],
         'no-use-before-define': ['error', { 'functions': false }],
         'filenames/match-regex': 2,
-        'filenames/match-exported': 2,
     }
 };
