@@ -34,14 +34,17 @@
         "mz": "^2.4.0",
         "node-notifier": "^4.6.1",
         "semver": "^5.3.0",
-        "superagent": "^2.1.0"
+        "axios": "^0.16.0",
+        "form-data": "^2.1.4",
+        "concat-stream": "^1.6.0"
     },
     "engines": {
-        "node": ">=v7.0.0"
+        "node": ">=v7.6.0"
     },
     "devDependencies": {
         "eslint": "^3.15.0",
         "eslint-config-airbnb-base": "^11.1.0",
-        "eslint-plugin-import": "^2.2.0"
+        "eslint-plugin-import": "^2.2.0",
+        "eslint-plugin-filenames": "^1.2.0"
     }
 }
