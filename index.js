@@ -1,8 +1,6 @@
 #!/usr/bin/env node
 
-
 const Program = require('commander');
-
 const version = require('./lib/version');
 
 // Define CLI
