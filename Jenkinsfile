@@ -4,11 +4,11 @@ node {
 		checkout scm
 	}
 
-	def scsCommander = docker.image('docker.viison.com:5000/scs-commander')
+	def scsCommander = docker.image('docker.viison.com/scs-commander')
     def image = null
 
 	stage('Docker build') {
-		docker.withRegistry('https://docker.viison.com:5000', '049e4a92-92d3-4bb2-9c8d-e3411d2a9981') {
+		docker.withRegistry('https://docker.viison.com', '049e4a92-92d3-4bb2-9c8d-e3411d2a9981') {
 			image = docker.build("${scsCommander.imageName()}")
 		}
 	}
@@ -21,7 +21,7 @@ node {
 	}
 
 	stage('Docker push') {
-	    docker.withRegistry('https://docker.viison.com:5000', '049e4a92-92d3-4bb2-9c8d-e3411d2a9981') {
+	    docker.withRegistry('https://docker.viison.com', '049e4a92-92d3-4bb2-9c8d-e3411d2a9981') {
            image.push()
         }
 	}
