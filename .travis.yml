@@ -19,3 +19,9 @@ after_success:
   - docker tag $DOCKER_REPO:$COMMIT $DOCKER_REPO:$TRAVIS_BRANCH
   - if [[ $TRAVIS_TAG ]]; then docker tag $DOCKER_REPO:$COMMIT $DOCKER_REPO:stable; fi
   - docker push $DOCKER_REPO
+
+deploy:
+  provider: npm
+  api_key: $NPM_AUTH_TOKEN
+  on:
+    tags: true
