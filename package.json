@@ -2,7 +2,12 @@
     "name": "scs-commander",
     "version": "1.0.2",
     "description": "A library and CLI tool for interacting with the Shopware Community Store.",
-    "keywords": ["shopware", "shopware community store", "scs", "shopware plugin"],
+    "keywords": [
+        "shopware",
+        "shopware community store",
+        "scs",
+        "shopware plugin"
+    ],
     "bugs": "https://github.com/VIISON/scs-commander/issues",
     "license": "MIT",
     "author": "Sven Münnich",
