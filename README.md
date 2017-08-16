@@ -36,7 +36,7 @@ You can sort the results by passing option `-s <sort_field>`. The available sort
 By default, this command automatically requests a review of the uploaded plugin version, which causes the binary to be released automatically. If you only want to upload the binary, pass the `--no_release` or `-R` option.
 If set, the HTTP endpoint will get called after a successful release.
 
-**Hint:** Releasing the plugin right away makes usually only sense when providing a changelog for all available languages. The changelog is parsed either directly from `plugin.json` or, if available in the provided `.zip` file, from `CHANGELOG.md`. The benefit of using a separate `CHANGELOG.md` file is the readability. Currently the [changelog parser](https://github.com/VIISON/scs-commander/blob/master/lib/plugin_changelog_parser.js) supports only a simple structure:
+**Note:** Releasing a plugin binary makes only sense when providing a changelog for all available languages, since Shopware requires a changelog of at least 20 characters per supported language. The changelog is parsed either directly from a `CHANGELOG.md` file that must be contained in the `.zip` file. The benefit of using a separate `CHANGELOG.md` file is readability, which is why defining a changelog in the `plugin.json` file is not supported. Currently the [changelog parser](https://github.com/VIISON/scs-commander/blob/master/lib/plugin_changelog_parser.js) supports only a simple structure:
 
 ```
 ## <version_0>
