@@ -6,7 +6,13 @@ A CLI tool for managing plugins in the Shopware Community Store.
 
 ## Install
 
-For now you have to pull this repository or download the source and install it using `npm install && npm link`.
+### Via npm
+
+`npm install -g scs-commander`
+
+### For development
+
+Clone this repository and install it using `npm install && npm link`.
 
 ## Configuration
 
@@ -68,4 +74,4 @@ You can also get complied HTML (which is the same as used by the `upload` comman
 
 ## License
 
-MIT
+[MIT](https://github.com/VIISON/scs-commander/blob/master/LICENSE)
