@@ -1,6 +1,6 @@
 # scs-commander
 
-[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE) [![Build Status](https://travis-ci.org/VIISON/scs-commander.svg?branch=master)](https://travis-ci.org/VIISON/scs-commander)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE) [![Build Status](https://img.shields.io/travis/VIISON/scs-commander.svg?style=flat-square)](https://travis-ci.org/VIISON/scs-commander) [![npm](https://img.shields.io/npm/v/scs-commander.svg?style=flat-square)](https://www.npmjs.com/package/scs-commander)
 
 A CLI tool for managing plugins in the Shopware Community Store.
 
