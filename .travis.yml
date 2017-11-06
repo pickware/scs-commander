@@ -1,7 +1,5 @@
-sudo: required
-
-services:
-  - docker
+dist: trusty
+sudo: false
 
 language: node_js
 
@@ -10,15 +8,6 @@ node_js:
 
 script:
   - npm run eslint
-
-after_success:
-  - if [[ $TRAVIS_PULL_REQUEST != "false" ]]; then exit 0; fi
-  - docker login -u $DOCKER_USER -p $DOCKER_PASSWORD $DOCKER_REGISTRY
-  - export COMMIT=${TRAVIS_COMMIT::8}
-  - docker build -f Dockerfile -t $DOCKER_REPO:$COMMIT .
-  - docker tag $DOCKER_REPO:$COMMIT $DOCKER_REPO:$TRAVIS_BRANCH
-  - if [[ $TRAVIS_TAG ]]; then docker tag $DOCKER_REPO:$COMMIT $DOCKER_REPO:stable; fi
-  - docker push $DOCKER_REPO
 
 deploy:
   provider: npm
