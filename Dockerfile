@@ -1,4 +1,4 @@
-FROM node:onbuild
+FROM node:7-onbuild
 
 RUN npm link
 
