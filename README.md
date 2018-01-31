@@ -72,6 +72,10 @@ Any whitespace/newlines leading or trailing a changelog for a version/language i
 
 You can also get complied HTML (which is the same as used by the `upload` command) by setting `--html`. If no `language` is provided, the english changelog is returned.
 
+### Change the minimum Shopware version compatibility of a plugin
+
+`scs-commander compatibility -u <your_username> -p <technical_plugin_name> --min-version <shopware_version_string>`
+
 ## License
 
 [MIT](https://github.com/VIISON/scs-commander/blob/master/LICENSE)
