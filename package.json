@@ -17,6 +17,7 @@
         "scs-commander-changelog": "./lib/commands/changelog.js",
         "scs-commander-compatibility": "./lib/commands/compatibility.js",
         "scs-commander-description": "./lib/commands/description.js",
+        "scs-commander-dump-plugin": "./lib/commands/dumpPlugin.js",
         "scs-commander-list": "./lib/commands/list.js",
         "scs-commander-upload": "./lib/commands/upload.js"
     },
