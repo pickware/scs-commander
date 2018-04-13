@@ -50,7 +50,7 @@
     },
     "devDependencies": {
         "eslint-plugin-filenames": "^1.2.0",
-        "viison-style-guide": "git+ssh://git@github.com/VIISON/style-guide.git"
+        "viison-style-guide": "https://oauth2:c28bed3fc58a28a8da3fc616c1b1cf230f071c30@github.com/VIISON/style-guide.git"
     },
     "engines": {
         "node": "^7.6.0"
