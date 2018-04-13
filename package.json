@@ -49,10 +49,8 @@
         "semver": "^5.3.0"
     },
     "devDependencies": {
-        "eslint": "^3.15.0",
-        "eslint-config-airbnb-base": "^11.1.0",
         "eslint-plugin-filenames": "^1.2.0",
-        "eslint-plugin-import": "^2.2.0"
+        "viison-style-guide": "git+ssh://git@github.com/VIISON/style-guide.git"
     },
     "engines": {
         "node": "^7.6.0"
