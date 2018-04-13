@@ -78,6 +78,12 @@ You can also get complied HTML (which is the same as used by the `upload` comman
 
 `scs-commander compatibility -u <your_username> -p <technical_plugin_name> --min-version <shopware_version_string>`
 
+### Download and dump the plugin information
+
+`scs-commander dump-plugin -u <your_username> -p <technical_plugin_name> [-f <FORMAT>]`
+
+Currently the only supported output format is `json`.
+
 ## License
 
 [MIT](https://github.com/VIISON/scs-commander/blob/master/LICENSE)
