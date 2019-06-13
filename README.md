@@ -31,9 +31,9 @@ You can sort the results by passing option `-s <sort_field>`. The available sort
 
 ### Update the description of a plugin
 
-`scs-commander description -u <your_username> -p <technical_plugin_name> -l <locale> [--backup] [--patch] <path_to_description_file>`
+`scs-commander description -u <your_username> -p <technical_plugin_name> -l <locale> [--backup] [--patch] [--max-update-retries <retry-count>] <path_to_description_file>`
 
-By default this command reads the file from the provided path and uses its content to update the plugin description in the community store. If you wish to review the resulting changes first and manually confirm them, pass `--patch`. You can also pass `--backup` to back up the current description in the local file system.
+By default this command reads the file from the provided path and uses its content to update the plugin description in the community store. If you wish to review the resulting changes first and manually confirm them, pass `--patch`. You can also pass `--backup` to back up the current description in the local file system. Since Shopware sometimes randomly returns errors when trying to save a plugin description, you can optionally pass `--max-update-retries <retry-count>` to automatically retry the upload requests on failure.
 
 ### Upload a new version of a plugin
 
