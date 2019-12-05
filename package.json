@@ -1,6 +1,6 @@
 {
     "name": "scs-commander",
-    "version": "1.6.1",
+    "version": "1.6.2",
     "description": "A library and CLI tool for interacting with the Shopware Community Store.",
     "keywords": [
         "shopware",
