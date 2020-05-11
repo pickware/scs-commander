@@ -6,3 +6,7 @@
 * Removes methods:
   * `ShopwareStoreCommander.getSalesForPlugin`
   * `ShopwareStoreCommander.getCommissionsForPlugin`
+* Removes files:
+  * `lib/pluginChangelogParser.js`
+  * `lib/pluginInfo.js`
+  * `lib/pluginJsonReader.js`
