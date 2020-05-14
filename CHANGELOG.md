@@ -1,4 +1,4 @@
-## next major release
+## 2.0.0
 
 * Makes commands `changelog` and `upload` compatible with Shopware 6 plugins.
 * Makes command `compatibility` fail when executed for a Shopware 6 plugin.
