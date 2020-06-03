@@ -1,3 +1,7 @@
+## 2.0.1
+
+* Fixes evaluation of Shopware version compatibility constraints for Shopware 5 plugins.
+
 ## 2.0.0
 
 * Makes commands `changelog` and `upload` compatible with Shopware 6 plugins.
