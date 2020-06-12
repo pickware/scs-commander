@@ -45,7 +45,7 @@
         "exponential-backoff": "^2.2.1",
         "form-data": "^2.5.1",
         "jszip": "^3.4.0",
-        "markdown-it": "^11.0.0",
+        "marked": "^1.0",
         "mz": "^2.4.0",
         "node-notifier": "^7.0",
         "semver": "^5.7.1"
