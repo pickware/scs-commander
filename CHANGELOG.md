@@ -1,4 +1,4 @@
-## next minor releases
+## next minor release
 
 * Supports nested lists in changelog markdown.
 
