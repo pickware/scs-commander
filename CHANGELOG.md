@@ -1,6 +1,6 @@
 ## next minor release
 
-* Supports nested lists in changelog markdown.
+* Adds support for nested lists in changelog markdown.
 
 ## 2.0.1
 
