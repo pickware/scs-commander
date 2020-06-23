@@ -1,3 +1,7 @@
+## next minor release
+
+* Adds support for nested lists in changelog markdown.
+
 ## 2.0.1
 
 * Fixes evaluation of Shopware version compatibility constraints for Shopware 5 plugins.
