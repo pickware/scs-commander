@@ -1,3 +1,7 @@
+## 2.2.0
+
+* Adds compatibility with Showpare's 4-digit version numbers.
+
 ## 2.1.0
 
 * Adds support for nested lists in changelog markdown.
