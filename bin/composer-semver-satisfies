@@ -24,7 +24,6 @@ if (!is_readable(__DIR__ . '/../vendor/autoload.php')) {
 
 require __DIR__ . '/../vendor/autoload.php';
 
-
 if ($argc !== 3) {
     printf('Usage: %s version version_constraint', basename(__FILE__));
     exit(EXIT_CODE_WRONG_PARAMETERS);
@@ -35,7 +34,7 @@ $versionConstraint = $argv[2];
 
 if (Semver::satisfies($version, $versionConstraint)) {
     printf(
-        'Version constraint %s matches version %s',
+        'Version constraint %s matches version %s.',
         $versionConstraint,
         $version
     );
@@ -43,7 +42,7 @@ if (Semver::satisfies($version, $versionConstraint)) {
 }
 
 printf(
-    'Version constraint %s DOES NOT match version %s',
+    'Version constraint %s DOES NOT match version %s.',
     $versionConstraint,
     $version
 );
