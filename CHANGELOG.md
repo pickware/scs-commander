@@ -1,6 +1,11 @@
+## next patch release
+
+* Really adds support for Shopware's 4-digit version numbers.
+* For evaluating composer version constraints the composer semver constraint logic is now used.
+
 ## 2.2.0
 
-* Adds compatibility with Showpare's 4-digit version numbers.
+* Adds compatibility with Shopware's 4-digit version numbers.
 
 ## 2.1.0
 

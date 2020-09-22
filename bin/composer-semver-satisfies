@@ -1,0 +1,51 @@
+#!/usr/bin/php
+<?php
+/*
+ * Copyright (c) Pickware GmbH. All rights reserved.
+ * This file is part of software that is released under a proprietary license.
+ * You must not copy, modify, distribute, make publicly available, or execute
+ * its contents or parts thereof without express permission by the copyright
+ * holder, unless otherwise permitted by law.
+ */
+
+namespace Pickware\ShopwarePlugins\Tools\PackagePlugin;
+
+use Composer\Semver\Semver;
+
+const EXIT_CODE_VERSION_MATCHES = 0;
+const EXIT_CODE_VERSION_DOES_NOT_MATCH = 1;
+const EXIT_CODE_WRONG_PARAMETERS = 2;
+const EXIT_CODE_SYSTEM_ERROR = 254;
+
+if (!is_readable(__DIR__ . '/../vendor/autoload.php')) {
+    echo 'Please run composer install first.';
+    exit(EXIT_CODE_SYSTEM_ERROR);
+}
+
+require __DIR__ . '/../vendor/autoload.php';
+
+
+if ($argc !== 3) {
+    printf('Usage: %s version version_constraint', basename(__FILE__));
+    exit(EXIT_CODE_WRONG_PARAMETERS);
+}
+
+$version = $argv[1];
+$versionConstraint = $argv[2];
+
+if (Semver::satisfies($version, $versionConstraint)) {
+    printf(
+        'Version constraint %s matches version %s',
+        $versionConstraint,
+        $version
+    );
+    exit(EXIT_CODE_VERSION_MATCHES);
+}
+
+printf(
+    'Version constraint %s DOES NOT match version %s',
+    $versionConstraint,
+    $version
+);
+
+exit(EXIT_CODE_VERSION_DOES_NOT_MATCH);
