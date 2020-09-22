@@ -1,10 +1,21 @@
 {
-    "name": "pickware/package-plugin",
+    "name": "pickware/scs-commander",
     "type": "project",
-    "description": "A script which packages Shopware 6+ plugins as ZIP files to be published on the Shopware Community Store.",
-    "license": "UNLICENSED",
+    "description": "A CLI tool for interacting with the Shopware Community Store.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pickware GmbH",
+            "email": "info@pickware.de"
+        }
+    ],
     "require": {
         "php": ">= 7.2",
         "composer/semver": "^3.2"
+    },
+    "config": {
+        "platform": {
+            "php": "7.2.33"
+        }
     }
 }
