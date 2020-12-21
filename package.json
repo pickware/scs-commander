@@ -47,7 +47,7 @@
         "jszip": "^3.4.0",
         "marked": "^1.0",
         "mz": "^2.4.0",
-        "node-notifier": "^7.0",
+        "node-notifier": "^8.0",
         "semver": "^5.7.1"
     },
     "devDependencies": {
