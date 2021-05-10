@@ -1,3 +1,7 @@
+## 3.0.1
+
+* Fixes usages of options passed to any command.
+
 ## 3.0.0
 
 ### Breaking changes
