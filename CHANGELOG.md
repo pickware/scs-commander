@@ -1,3 +1,14 @@
+## 3.0.0
+
+### Breaking changes
+
+* Drops support of Node.js < v14.
+
+### Bug fixes
+
+* Fixes loading of extra plugin fields.
+* Fixes `upload` command.
+
 ## 2.2.0
 
 * Adds compatibility with Showpare's 4-digit version numbers.
