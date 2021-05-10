@@ -1,6 +1,6 @@
 # scs-commander
 
-[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](LICENSE) [![CI](https://github.com/pickware/ios-apps/actions/workflows/ci.yml/badge.svg)](https://github.com/pickware/ios-apps/actions/workflows/ci.yml) [![npm](https://img.shields.io/npm/v/scs-commander.svg?style=flat)](https://www.npmjs.com/package/scs-commander)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](LICENSE) [![CI](https://github.com/pickware/scs-commander/actions/workflows/ci.yml/badge.svg)](https://github.com/pickware/scs-commander/actions/workflows/ci.yml) [![npm](https://img.shields.io/npm/v/scs-commander.svg?style=flat)](https://www.npmjs.com/package/scs-commander)
 
 A CLI tool for managing plugins in the Shopware Community Store.
 
