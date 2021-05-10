@@ -29,10 +29,9 @@ build/Release
 .node_repl_history
 
 # Dev files
+.cspell.json
 .editorconfig
 .eslintrc.js
 
-# CI files
-.travis.yml
-Dockerfile
-Jenkinsfile
+# GitHub files
+.github
