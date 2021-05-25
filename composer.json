@@ -1,0 +1,10 @@
+{
+    "name": "pickware/package-plugin",
+    "type": "project",
+    "description": "A script which packages Shopware 6+ plugins as ZIP files to be published on the Shopware Community Store.",
+    "license": "UNLICENSED",
+    "require": {
+        "php": ">= 7.2",
+        "composer/semver": "^3.2"
+    }
+}

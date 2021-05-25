@@ -29,7 +29,8 @@
         "cspell": "cspell '**/*.js' README.md .scs-commander.dist .github/CODEOWNERS",
         "eslint": "eslint .",
         "eslint:fix": "eslint --fix .",
-        "start": "node ."
+        "start": "node .",
+        "postinstall": "composer install"
     },
     "dependencies": {
         "axios": "^0.21.1",
@@ -42,6 +43,7 @@
         "concat-stream": "^2.0.0",
         "diff": "^5.0.0",
         "dotenv": "^9.0.1",
+        "execa": "^4.0.3",
         "exponential-backoff": "^3.1.0",
         "form-data": "^4.0.0",
         "jszip": "^3.6.0",

@@ -35,3 +35,6 @@ build/Release
 
 # GitHub files
 .github
+
+# Composer
+vendor
