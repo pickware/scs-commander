@@ -1,6 +1,6 @@
-## next patch release
+## 3.0.2
 
-* Increase maximum file upload size to 30MB.
+* Increase maximum file size for plugin binary uploads to 30MB.
 
 ## 3.0.1
 
