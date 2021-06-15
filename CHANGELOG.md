@@ -1,3 +1,7 @@
+## next patch release
+
+* Increase maximum file upload size to 30MB.
+
 ## 3.0.1
 
 * Fixes usages of options passed to any command.
