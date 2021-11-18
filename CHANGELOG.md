@@ -3,6 +3,10 @@
 * Really adds support for Shopware's 4-digit version numbers.
 * For evaluating composer version constraints the composer semver constraint logic is now used.
 
+## 3.1.0
+
+* Enables support for Node.js > v14.
+
 ## 3.0.2
 
 * Increase maximum file size for plugin binary uploads to 30MB.
