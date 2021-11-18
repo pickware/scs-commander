@@ -1,3 +1,7 @@
+## 3.1.0
+
+* Enables support for Node.js > v14.
+
 ## 3.0.2
 
 * Increase maximum file size for plugin binary uploads to 30MB.
