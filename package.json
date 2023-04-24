@@ -51,7 +51,7 @@
         "semver": "^7.3.5"
     },
     "devDependencies": {
-        "cspell": "^5.4.0",
+        "cspell": "^6.31.1",
         "eslint-plugin-filenames": "^1.3.2",
         "viison-style-guide": "git+https://github.com/pickware/style-guide.git"
     },
