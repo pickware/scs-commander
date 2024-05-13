@@ -2,14 +2,21 @@ name: CI
 
 on: [push]
 
+# Automatically cancel previous runs for the same ref (i.e. branch)
+concurrency:
+    group: ${{ github.ref }}-${{ github.event_name }}
+    cancel-in-progress: true
+
 jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: '16'
+          node-version-file: 'package.json'
+          cache: 'npm'
+          cache-dependency-path: 'package-lock.json'
       - run: npm ci
       - run: npm run eslint
       - run: npm run cspell
@@ -19,10 +26,14 @@ jobs:
     if: startsWith(github.ref, 'refs/tags/')
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: '16'
-      - uses: JS-DevTools/npm-publish@v1
-        with:
-          token: ${{ secrets.NPM_ACCESS_TOKEN }}
+          node-version-file: 'package.json'
+          cache: 'npm'
+          cache-dependency-path: 'package-lock.json'
+          registry-url: 'https://registry.npmjs.org'
+      - run: npm ci
+      - run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}

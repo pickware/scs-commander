@@ -3,6 +3,16 @@
 * Really adds support for Shopware's 4-digit version numbers.
 * For evaluating composer version constraints the composer semver constraint logic is now used.
 
+## 4.0.0
+
+### Breaking changes
+
+* Drops support of Node.js < v18.
+
+### Bug fixes
+
+* Fixes `upload` command.
+
 ## 3.1.0
 
 * Enables support for Node.js > v14.
