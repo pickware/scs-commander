@@ -2,6 +2,7 @@
     "allowCompoundWords": true,
     "words": [
         "Changelogs",
+        "execa",
         "jsdiff",
         "jszip",
         "promisify",
