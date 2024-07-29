@@ -1,3 +1,9 @@
+## NEXT PATCH RELEASE
+
+### Bug fixes
+
+* Fixes version check does not support composer version ranges.
+
 ## 4.0.0
 
 ### Breaking changes
