@@ -48,7 +48,7 @@
         "marked": "^2.0.3",
         "mz": "^2.4.0",
         "node-notifier": "^9.0.1",
-        "composer-version-constraint-evaluator": "^1.0.0"
+        "@pickware/composer-version-constraint-evaluator": "^1.0.0"
     },
     "devDependencies": {
         "cspell": "^5.4.0",
