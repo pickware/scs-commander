@@ -2,7 +2,7 @@
 
 ### Bug fixes
 
-* Fixes version check does not support composer version ranges.
+* Fixes plugin binary version checks to support composer version constraints.
 
 ## 4.0.0
 
